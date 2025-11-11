@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HARMONI Agribisnis — Katalog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">H</div>
+      <div class="brand-text">
+        <h1>HARMONI</h1>
+        <p>Agri • Hydroponic • Poultry</p>
+      </div>
+    </div>
+    <nav class="nav-menu">
+      <a href="#home">Beranda</a>
+      <a href="#produk">Produk</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <h2>Selaras Alam, Sejahtera Bersama</h2>
+        <p>HARMONI memproduksi sayuran hidroponik dan telur ayam kampung dengan prinsip keberlanjutan dan kualitas. Pesan mudah lewat WhatsApp — segar dari kebun kami ke meja Anda.</p>
+        <div class="hero-cta">
+          <a href="#produk" class="btn primary">Lihat Produk</a>
+          <a id="waTop" class="btn outline" target="_blank" rel="noopener">Pesan via WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="images/hero_farm.png" alt="HARMONI Farm">
+      </div>
+    </section>
+
+    <section id="produk" class="section">
+      <h3>Produk Kami</h3>
+      <p class="muted">Sayuran segar hasil hidroponik dan telur ayam kampung dari lahan HARMONI (1 Ha).</p>
+
+      <div class="controls">
+        <button class="chip active" data-cat="all">Semua</button>
+        <button class="chip" data-cat="daun">Sayuran Daun</button>
+        <button class="chip" data-cat="telur">Telur & Lainnya</button>
+      </div>
+
+      <div class="grid" id="productGrid" aria-live="polite"></div>
+    </section>
+
+    <section id="tentang" class="section about">
+      <h3>Tentang HARMONI</h3>
+      <p>HARMONI adalah usaha agribisnis terpadu yang menggabungkan pertanian hidroponik dan peternakan ayam petelur. Kami menerapkan sistem yang ramah lingkungan, memanfaatkan limbah secara sirkular, dan menjual langsung kepada konsumen melalui kanal digital.</p>
+    </section>
+
+    <section id="kontak" class="section kontak">
+      <h3>Kontak & Lokasi</h3>
+      <p>Untuk pemesanan cepat, klik tombol WhatsApp atau hubungi nomor kami.</p>
+      <div class="contact-row">
+        <div>
+          <p><strong>WhatsApp:</strong> <span id="waNumber"></span></p>
+          <p><strong>Alamat:</strong> Jl. Raya Karanganyar No.45, Gresik, Jawa Timur</p>
+        </div>
+        <div class="map-placeholder">
+          <img src="images/map_placeholder.png" alt="Peta Lokasi">
+        </div>
+      </div>
+      <p class="muted">Jam operasional: Senin–Sabtu, 07:00–16:00</p>
+    </section>
+
+    <footer class="footer">
+      <p>© HARMONI Agribisnis — Pertanian Hidroponik & Peternakan Ayam Petelur</p>
+    </footer>
+  </main>
+
+  <a id="waFloat" class="wa-float" title="Chat via WhatsApp" target="_blank" rel="noopener">WhatsApp</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
